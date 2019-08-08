@@ -1,11 +1,11 @@
 // Grab the Elements from the DOM
-console.log('Running!!!!!!');
+
 
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
 const menuBranding = document.querySelector('.menu-branding');
-const navItems = document.querySelectorAll('nav-item')
+const navItems = document.querySelectorAll('.nav-item')
 
 // Here set inital state of menu
 let showMenu = false;
@@ -30,7 +30,7 @@ function toggleMenu() {
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
         navItems.forEach(item =>
-            item.classList.add('show'));
+            item.classList.remove('show'));
 
         // Set Menu State
         showMenu = false;
