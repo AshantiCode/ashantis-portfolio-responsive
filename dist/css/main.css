@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cherry+Swash|Emilys+Candy|Flavors|Fredericka+the+Great|Katibeh|Milonga&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -97,7 +98,6 @@ body {
   color: #ebebeb;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif; }
   body#bg-image {
@@ -123,7 +123,7 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
-    font-family: cursive; }
+    font-family: "Emilys Candy", cursive; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
