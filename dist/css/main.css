@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cherry+Swash|Emilys+Candy|Flavors|Fredericka+the+Great|Katibeh|Milonga&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -148,19 +149,18 @@ header {
 .text-secondary {
   color: #FFC040; }
 
-main {
-  min-height: calc(100vh - 60px); }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #FFC040;
-        transition: all .4s ease-out; }
-  main #home {
-    overflow: hidden; }
-    main #home .lg-heading {
-      margin-top: 20vh; }
+main .icons {
+  margin-top: 1rem; }
+  main .icons a {
+    padding: 0.4rem; }
+    main .icons a:hover {
+      color: #FFC040;
+      transition: all .4s ease-out; }
+
+main #home {
+  overflow: hidden; }
+  main #home .lg-heading {
+    margin-top: 20vh; }
 
 section {
   padding: 4rem;
@@ -273,6 +273,13 @@ section {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
+  html {
+    background: url("../img/sunset2-640.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100%;
+    background-size: cover;
+    z-index: -1; }
   main {
     align-items: center;
     text-align: center;
@@ -309,10 +316,10 @@ section {
   html {
     background: url("../img/sunset2-640.jpg") no-repeat;
     background-attachment: fixed;
+    background-position: center center;
     background-size: 100%;
     background-size: cover;
-    z-index: -1;
-    height: 100%; }
+    z-index: -1; }
   .menu-btn {
     float: right; }
   main {
