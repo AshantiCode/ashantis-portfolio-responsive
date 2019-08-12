@@ -76,6 +76,8 @@
 @include mediaSm {
     body {
         background: url('../img/sunset2-sm.jpg');
+        background-attachment: fixed;
+        background-size: cover;
 
     }
 
