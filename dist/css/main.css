@@ -277,9 +277,11 @@ section {
     background: url("../img/sunset2-640.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
     background-size: 100%;
-    background-size: cover;
-    z-index: -1; }
+    z-index: -10; }
   main {
     align-items: center;
     text-align: center;
