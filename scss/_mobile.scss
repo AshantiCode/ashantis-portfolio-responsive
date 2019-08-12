@@ -15,34 +15,35 @@
 //  Tablets & Small Laptops
 @include mediaMd {
 
-    // html {
-    //     background: url('../img/sunset2-long.jpg') no-repeat;
-    //     background-attachment: fixed;
-    //     background-position: center center;
-    //     -webkit-background-size: 100%;
-    //     -moz-background-size: 100%;
-    //     -o-background-size: 100%;
-    //     background-size: 100%;
-    //     background-size: cover;
-    //     z-index: -10;
-    //     overflow-x: hidden;
-    // }
-
-    html::before {
-        content: ' ';
-        display: block;
-        background-image: url('../img/sunset2-long.jpg');
-        background-position: center;
+    html {
+        background: url('../img/sunset2-long.jpg') no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
         background-size: cover;
+        z-index: -10;
+        overflow-x: hidden;
         height: 100vh;
-        width: 100vw;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: fixed;
-        z-index: -10; // This is pretty important.
     }
+
+    // html::before {
+    //     content: ' ';
+    //     display: block;
+    //     background-image: url('../img/sunset2-long.jpg');
+    //     background-position: center;
+    //     background-size: cover;
+    //     height: 100vh;
+    //     width: 100vw;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     position: fixed;
+    //     z-index: -10; // This is pretty important.
+    // }
 
 
     // vorher main
