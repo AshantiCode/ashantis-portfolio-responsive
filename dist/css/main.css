@@ -304,7 +304,7 @@ section {
 
 @media screen and (max-width: 500px) {
   body {
-    background: url("../img/sunset2-sm.jpg");
+    background: url("../img/sunset2-320.jpg");
     background-attachment: fixed;
     background-size: cover; }
   .menu-btn {
