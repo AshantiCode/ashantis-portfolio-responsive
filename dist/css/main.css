@@ -274,7 +274,7 @@ section {
 
 @media screen and (max-width: 768px) {
   html {
-    background: url("../img/sunset2-640.jpg") no-repeat;
+    background: url("../img/sunset2-sm.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center center;
     -webkit-background-size: 100%;
