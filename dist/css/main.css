@@ -182,7 +182,8 @@ section {
 #about,
 #projects,
 #contact {
-  background: rgba(0, 0, 0, 0.7) z-index=3; }
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3; }
 
 .about-info {
   display: grid;
@@ -288,6 +289,7 @@ section {
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
+    background-size: cover;
     z-index: -10;
     overflow-x: hidden; }
   main {
