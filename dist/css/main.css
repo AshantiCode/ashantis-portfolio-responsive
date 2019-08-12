@@ -102,22 +102,29 @@ html,
 body {
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   overflow-x: hidden; }
 
-html {
-  background: url(../img/sunset2.jpg) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden; }
-
 body {
+  background: url("../img/sunset2.jpg");
+  background: #252525;
   color: #ebebeb;
   height: 100%;
   margin: 0;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif; }
+  body#bg-image {
+    background: url(../img/sunset2.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-image:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(37, 37, 37, 0.6);
+      z-index: -1; }
 
 h1,
 h2,
@@ -161,29 +168,22 @@ main .icons {
       color: #FFC040;
       transition: all .4s ease-out; }
 
-main #home {
-  overflow: hidden; }
-  main #home .lg-heading {
-    margin-top: 20vh; }
+main #home .lg-heading {
+  margin-top: 20vh; }
 
 section {
   padding: 4rem;
   min-height: 100vh; }
 
 .divider {
-  background: transparent;
-  margin: 0;
-  padding: 0;
   height: 100vh;
   width: 100%;
   overflow: hidden; }
 
-#home,
 #about,
 #projects,
 #contact {
-  background: rgba(0, 0, 0, 0.7);
-  z-index: 3; }
+  background: rgba(0, 0, 0, 0.7); }
 
 .about-info {
   display: grid;
@@ -281,20 +281,6 @@ section {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  html::before {
-    content: ' ';
-    display: block;
-    background-image: url("../img/sunset2-long.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    z-index: -10; }
   main {
     align-items: center;
     text-align: center;
