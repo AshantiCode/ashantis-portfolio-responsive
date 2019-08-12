@@ -104,7 +104,7 @@ body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 html {
   background: url(../img/sunset2.jpg) no-repeat center center fixed;
@@ -285,7 +285,8 @@ section {
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
-    z-index: -10; }
+    z-index: -10;
+    overflow: hidden; }
   main {
     align-items: center;
     text-align: center;
