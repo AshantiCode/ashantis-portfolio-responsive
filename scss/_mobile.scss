@@ -23,7 +23,7 @@
         -moz-background-size: 100%;
         -o-background-size: 100%;
         background-size: 100%;
-        // background-size: cover;
+        background-size: contain;
         z-index: -10;
         overflow-x: hidden;
     }

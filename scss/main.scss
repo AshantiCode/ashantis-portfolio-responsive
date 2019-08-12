@@ -98,7 +98,7 @@ main {
 
     //   vorher #home
     #home {
-        overflow: hidden;
+        // overflow: hidden;
 
         .lg-heading {
             margin-top: 20vh;
@@ -127,6 +127,7 @@ section {
 #contact {
     // @include overlay;
     background: rgba(0, 0, 0, .7);
+    z-index=3;
 
 }
 

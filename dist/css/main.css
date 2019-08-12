@@ -182,7 +182,7 @@ section {
 #about,
 #projects,
 #contact {
-  background: rgba(0, 0, 0, 0.7); }
+  background: rgba(0, 0, 0, 0.7) z-index=3; }
 
 .about-info {
   display: grid;
