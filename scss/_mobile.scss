@@ -14,15 +14,20 @@
 
 //  Tablets & Small Laptops
 @include mediaMd {
+
+    // vorher main
     main {
         align-items: center;
         text-align: center;
+        overflow-x: none;
 
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
         }
     }
+
+
 
     ul.menu-nav,
     div.menu-branding {
@@ -69,8 +74,20 @@
 
 // Smartphones
 @include mediaSm {
+    body {
+        background: url('../img/sunset2-sm.jpg');
+
+    }
+
+
+    .menu-btn {
+        float: right;
+    }
+
+    // vorher section
     main {
-        padding: 2rem;
+        // padding: 2rem;
+        overflow-x: none;
 
         #home h1 {
             margin-top: 10vh;
@@ -79,6 +96,12 @@
         .lg-heading {
             margin-top: 1rem;
             font-size: 5rem;
+        }
+
+        // neu
+        section {
+            padding: 2rem;
+            overflow-x: none;
         }
     }
 

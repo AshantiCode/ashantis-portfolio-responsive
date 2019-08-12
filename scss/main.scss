@@ -2,22 +2,19 @@
 @import 'menu';
 // @import url('https://fonts.googleapis.com/css?family=Tangerine&display=swap');
 
-
-
 * {
     box-sizing: border-box;
 }
 
 body {
     @include background;
-    background: $primary-color;
+    // background: $primary-color;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
-    font-family: 'Montserrat',
-        sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 // Headings
@@ -35,9 +32,13 @@ h3 {
 
     &.sm-heading {
         margin-bottom: 2rem;
-        padding: .2rem 2rem;
+        padding: 0.2rem 2rem;
         letter-spacing: 1px;
-        background: rgba(lighten($primary-color, 2), .5);
+        background: rgba(lighten($primary-color, 2), 0.5);
+    }
+
+    &.xs-heading {
+        color: $secondary-color;
     }
 }
 
@@ -56,8 +57,9 @@ header {
     color: $secondary-color;
 }
 
+// vorher main
 main {
-    padding: 4rem;
+    // padding: 4rem;
     // calc to create a sticky footer
     min-height: calc(100vh - 60px);
 
@@ -65,7 +67,7 @@ main {
         margin-top: 1rem;
 
         a {
-            padding: .4rem;
+            padding: 0.4rem;
 
             &:hover {
                 color: $secondary-color;
@@ -74,16 +76,47 @@ main {
         }
     }
 
-    &#home {
+    //   vorher #home
+    #home {
         overflow: hidden;
 
-        h1 {
+        .lg-heading {
             margin-top: 20vh;
         }
+
     }
+
+    //   hab ich geadded
+    // &#about {
+    //     @include background;
+    //     background: $primary-color;
+    //     color: set-text-color($primary-color);
+    //     height: 100%;
+    //     margin: 0;
+    // }
+
+}
+
+section {
+    padding: 4rem;
+    min-height: 100vh;
+}
+
+.divider {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 // About Page
+#about,
+#projects,
+#contact {
+    // @include overlay;
+    background: rgba(0, 0, 0, .7);
+
+}
+
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -93,6 +126,9 @@ main {
     grid-template-columns: repeat(3, 1fr);
 
     .bio-image {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
@@ -118,23 +154,30 @@ main {
 
     .job {
         background: lighten($primary-color, 5);
-        padding: .5rem;
+        padding: 0.5rem;
         border-bottom: 5px solid $secondary-color;
     }
+
 }
 
 // Project Page
 .projects {
+    // min-height: 100vh;
     display: grid;
-    grid-gap: .8rem;
+    grid-gap: 0.8rem;
     grid-template-columns: repeat(3, 1fr);
+
+    // .item {
+    //     margin-bottom: 4rem;
+    //     ;
+    // }
 
     img {
         width: 100%;
         border: 3px solid #fff;
 
         &:hover {
-            opacity: .5;
+            opacity: 0.5;
             border-color: $secondary-color;
             @include easeOut;
         }
@@ -151,13 +194,13 @@ main {
 
     div {
         font-size: 2rem;
-        border: 3px solid#fff;
+        // border: 3px solid#fff;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
         @include easeOut;
 
         &:hover {
-            padding: .5rem 1.5rem;
+            // padding: .5rem 1.5rem;
             background: $secondary-color;
             color: set-text-color($secondary-color);
 
@@ -166,7 +209,6 @@ main {
             }
         }
     }
-
 }
 
 // Project Info Styles
@@ -174,22 +216,18 @@ main {
     border: 1px solid $secondary-color;
     border-radius: 20px;
     display: inline-block;
-    margin: 1rem .3rem 0 0;
-    padding: .3rem 1rem;
-    font-size: .9rem;
+    margin: 1rem 0.3rem 0 0;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
     letter-spacing: 1px;
 }
-
-
-
-
 
 // Button Styles
 .btn {
     display: block;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border: 0;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     text-align: center;
 
     &:hover {
@@ -207,9 +245,7 @@ main {
         @extend .btn;
         background: lighten($primary-color, 50);
     }
-
 }
-
 
 //  Sticky Footer , calc function on main
 #main-footer {
@@ -219,7 +255,6 @@ main {
     color: set-text-color($primary-color);
     height: 60px;
 }
-
 
 // Media Queries at the bottom to run after normal CSS
 @import 'mobile';

@@ -25,7 +25,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: .9;
+  opacity: 1;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -56,9 +56,13 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/shanti2.jpg);
+      background: url(../img/profile-pic-640.jpg) no-repeat;
+      background-size: cover;
+      background-position-x: 50%;
+      background-position-y: 50%;
       border-radius: 50%;
-      border: 3px solid #FFC040; }
+      border: 3px solid #FFC040;
+      opacity: none; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all .4s ease-out; }
@@ -94,14 +98,13 @@
   box-sizing: border-box; }
 
 body {
-  background: #252525;
   color: #ebebeb;
   height: 100%;
   margin: 0;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif; }
   body#bg-image {
-    background: url(../img/background2.jpg);
+    background: url(../img/sunset2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-image:after {
@@ -111,7 +114,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(37, 37, 37, 0.4);
+      background: rgba(37, 37, 37, 0.7);
       z-index: -1; }
 
 h1,
@@ -128,9 +131,13 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: .2rem 2rem;
+    padding: 0.2rem 2rem;
     letter-spacing: 1px;
     background: rgba(42, 42, 42, 0.5); }
+  h1.xs-heading,
+  h2.xs-heading,
+  h3.xs-heading {
+    color: #FFC040; }
 
 a {
   color: #fff;
@@ -145,19 +152,32 @@ header {
   color: #FFC040; }
 
 main {
-  padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
-      padding: .4rem; }
+      padding: 0.4rem; }
       main .icons a:hover {
         color: #FFC040;
         transition: all .4s ease-out; }
-  main#home {
+  main #home {
     overflow: hidden; }
-    main#home h1 {
+    main #home .lg-heading {
       margin-top: 20vh; }
+
+section {
+  padding: 4rem;
+  min-height: 100vh; }
+
+.divider {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; }
+
+#about,
+#projects,
+#contact {
+  background: rgba(0, 0, 0, 0.7); }
 
 .about-info {
   display: grid;
@@ -165,6 +185,9 @@ main {
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -180,18 +203,18 @@ main {
     grid-area: job3; }
   .about-info .job {
     background: #323232;
-    padding: .5rem;
+    padding: 0.5rem;
     border-bottom: 5px solid #FFC040; }
 
 .projects {
   display: grid;
-  grid-gap: .8rem;
+  grid-gap: 0.8rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
     border: 3px solid #fff; }
     .projects img:hover {
-      opacity: .5;
+      opacity: 0.5;
       border-color: #FFC040;
       transition: all .4s ease-out; }
 
@@ -203,12 +226,10 @@ main {
   margin-top: 1rem; }
   .boxes div {
     font-size: 2rem;
-    border: 3px solid #fff;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     transition: all .4s ease-out; }
     .boxes div:hover {
-      padding: .5rem 1.5rem;
       background: #FFC040;
       color: #000; }
       .boxes div:hover span {
@@ -218,16 +239,16 @@ main {
   border: 1px solid #FFC040;
   border-radius: 20px;
   display: inline-block;
-  margin: 1rem .3rem 0 0;
-  padding: .3rem 1rem;
-  font-size: .9rem;
+  margin: 1rem 0.3rem 0 0;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #FFC040;
@@ -256,7 +277,8 @@ main {
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    overflow-x: none; }
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
@@ -286,12 +308,19 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  body {
+    background: url("../img/sunset2-sm.jpg"); }
+  .menu-btn {
+    float: right; }
   main {
-    padding: 2rem; }
+    overflow-x: none; }
     main #home h1 {
       margin-top: 10vh; }
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+    main section {
+      padding: 2rem;
+      overflow-x: none; }
   .projects {
     grid-template-columns: 1fr; } }

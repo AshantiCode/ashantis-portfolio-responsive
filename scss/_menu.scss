@@ -45,7 +45,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: .9;
+    // opacity: 0.9;
+    opacity: 1;
     visibility: hidden;
 
     &.show {
@@ -91,11 +92,14 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url(../img/shanti2.jpg);
+            // background: url(../img/profile-pic-600.png) no-repeat;
+            background: url(../img/profile-pic-640.jpg) no-repeat;
+            background-size: cover;
+            background-position-x: 50%;
+            background-position-y: 50%;
             border-radius: 50%;
             border: 3px solid $secondary-color;
-
-
+            opacity: none;
         }
     }
 
@@ -126,13 +130,12 @@
         &:hover {
             color: $secondary-color;
         }
-
     }
 }
 
 // Delay of each nav-item slide by .1seconds with for loop
 @for $x from 1 through 4 {
     .nav-item:nth-child(#{$x}) {
-        transition-delay: $x * .1s;
+        transition-delay: $x * 0.1s;
     }
 }
