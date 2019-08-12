@@ -101,10 +101,13 @@ html,
 body {
   overflow-x: hidden; }
 
-body {
-  background: url("../img/sunset2.jpg");
-  background-attachment: fixed;
+html {
+  background: url(../img/sunset2.jpg) no-repeat center center fixed;
   background-size: cover;
+  height: 100%;
+  overflow: hidden; }
+
+body {
   color: #ebebeb;
   height: 100%;
   margin: 0;
@@ -293,7 +296,7 @@ section {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url(../img/profile-pic-320.jpg);
+      background: url(../img/profile-pic-150.jpg);
       width: 150px;
       height: 150px; }
   .about-info {
