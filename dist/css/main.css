@@ -273,7 +273,7 @@ section {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  .bg-image {
+  #bg-image {
     background: url("../img/sunset2-long.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center center;
