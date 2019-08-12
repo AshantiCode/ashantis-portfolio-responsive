@@ -15,19 +15,7 @@
 //  Tablets & Small Laptops
 @include mediaMd {
 
-    // html {
-    //     background: url('../img/sunset2-long.jpg') no-repeat;
-    //     background-attachment: fixed;
-    //     background-position: center center;
-    //     -webkit-background-size: 100%;
-    //     -moz-background-size: 100%;
-    //     -o-background-size: 100%;
-    //     background-size: 100%;
-    //     // background-size: cover;
-    //     z-index: -10;
-    // }
-
-    #bg-image {
+    html {
         background: url('../img/sunset2-long.jpg') no-repeat;
         background-attachment: fixed;
         background-position: center center;
@@ -38,6 +26,7 @@
         // background-size: cover;
         z-index: -10;
     }
+
 
     // vorher main
     main {
