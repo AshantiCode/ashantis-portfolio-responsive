@@ -98,24 +98,14 @@
   box-sizing: border-box; }
 
 body {
+  background: url("../img/sunset2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
   color: #ebebeb;
   height: 100%;
   margin: 0;
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif; }
-  body#bg-image {
-    background: url(../img/sunset2.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-image:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(37, 37, 37, 0.7);
-      z-index: -1; }
 
 h1,
 h2,
@@ -174,6 +164,7 @@ section {
   width: 100%;
   overflow: hidden; }
 
+#home,
 #about,
 #projects,
 #contact {

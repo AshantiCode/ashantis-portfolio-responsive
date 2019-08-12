@@ -7,8 +7,10 @@
 }
 
 body {
-    @include background;
-    // background: $primary-color;
+    // @include background;
+    background: url('../img/sunset2.jpg');
+    background-attachment: fixed;
+    background-size: cover; // background: $primary-color;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -108,7 +110,8 @@ section {
     overflow: hidden;
 }
 
-// About Page
+// OVerlays
+#home,
 #about,
 #projects,
 #contact {
@@ -116,6 +119,8 @@ section {
     background: rgba(0, 0, 0, .7);
 
 }
+
+// About Page
 
 .about-info {
     display: grid;
