@@ -286,7 +286,7 @@ section {
     -o-background-size: 100%;
     background-size: 100%;
     z-index: -10;
-    overflow: hidden; }
+    overflow-x: hidden; }
   main {
     align-items: center;
     text-align: center;
