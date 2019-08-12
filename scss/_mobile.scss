@@ -15,7 +15,19 @@
 //  Tablets & Small Laptops
 @include mediaMd {
 
-    html {
+    // html {
+    //     background: url('../img/sunset2-long.jpg') no-repeat;
+    //     background-attachment: fixed;
+    //     background-position: center center;
+    //     -webkit-background-size: 100%;
+    //     -moz-background-size: 100%;
+    //     -o-background-size: 100%;
+    //     background-size: 100%;
+    //     // background-size: cover;
+    //     z-index: -10;
+    // }
+
+    .bg-image {
         background: url('../img/sunset2-long.jpg') no-repeat;
         background-attachment: fixed;
         background-position: center center;
@@ -25,7 +37,6 @@
         background-size: 100%;
         // background-size: cover;
         z-index: -10;
-
     }
 
     // vorher main
@@ -97,21 +108,7 @@
 
     // }
 
-    body:before {
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url(../img/sunset2-long.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+
 
 
     .menu-btn {

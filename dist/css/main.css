@@ -273,7 +273,7 @@ section {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
-  html {
+  .bg-image {
     background: url("../img/sunset2-long.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -315,20 +315,6 @@ section {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url(../img/sunset2-long.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
   .menu-btn {
     float: right; }
   main {
