@@ -171,6 +171,9 @@ section {
   min-height: 100vh; }
 
 .divider {
+  background: transparent;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100%;
   overflow: hidden; }
