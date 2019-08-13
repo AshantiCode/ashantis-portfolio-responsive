@@ -190,12 +190,12 @@ section {
 
 #projects.skewed {
   transform: skew(0deg, -10deg);
-  background: #252525;
-  padding-bottom: 7rem; }
+  background: #252525; }
 
 #projects .content {
   transform: skew(0deg, 10deg);
-  padding: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 5rem; }
 
 .about-info {
   display: grid;
@@ -235,6 +235,9 @@ section {
       opacity: 0.5;
       border-color: #ffc040;
       transition: all 0.4s ease-out; }
+
+.content {
+  padding-top: 4rem; }
 
 .boxes {
   display: flex;
@@ -341,4 +344,4 @@ section {
   .projects {
     grid-template-columns: 1fr; }
   #projects .content {
-    padding: 0rem; } }
+    padding: 2rem; } }

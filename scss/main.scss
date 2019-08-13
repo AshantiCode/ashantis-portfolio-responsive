@@ -103,8 +103,8 @@ section {
 
 }
 
-#about,
-// #projects,
+#about // #projects,
+
 // #contact
     {
     // @include overlay;
@@ -132,12 +132,14 @@ section {
     &.skewed {
         transform: skew(0deg, -10deg);
         background: $primary-color;
-        padding-bottom: 7rem;
+
     }
 
     .content {
         transform: skew(0deg, 10deg);
-        padding: 4rem;
+        // max-width: 960px;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
     }
 }
 
@@ -222,6 +224,11 @@ section {
 }
 
 // Contact Page
+
+.content {
+    padding-top: 4rem;
+}
+
 .boxes {
     display: flex;
     flex-wrap: wrap;
