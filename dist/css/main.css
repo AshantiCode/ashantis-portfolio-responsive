@@ -341,4 +341,4 @@ section {
   .projects {
     grid-template-columns: 1fr; }
   #projects .content {
-    padding: 2rem; } }
+    padding: 0rem; } }
